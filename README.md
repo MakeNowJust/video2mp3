@@ -36,7 +36,7 @@ video2mp3 = require('video2mp3');
 If passed no-object type value (i.e. string, number ...) as the second argument,
 it equals `convert(video, {mp3path: options}, callback)`.
 
-`options` follows this properties.
+`options` follows such properties:
 
   - `options.mp3path` is the path of output mp3.
   - `options.sampleRate` is the sampling rate, default is 44.1kHz.
@@ -44,7 +44,7 @@ it equals `convert(video, {mp3path: options}, callback)`.
 If passed no `options.mp3path`, it returns stream object to convert to mp3.
 
 ```js
-video2mp3.convert('video.mp4').pipe(require('fs').createWriteStream(audio.mp3'));
+video2mp3.convert('video.mp4').pipe(require('fs').createWriteStream('audio.mp3'));
 ```
 
 Otherwise it converts video to mp3 and save to `options.mp3path`,
