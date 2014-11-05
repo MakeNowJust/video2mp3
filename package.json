@@ -1,0 +1,20 @@
+{
+  "name": "video2mp3",
+  "version": "0.1.0",
+  "description": "Convert video to mp3 with using ffmpeg",
+  "keywords": [
+    "video",
+    "audio",
+    "mp3",
+    "convert"
+  ],
+  "homepage": "https://github.com/MakeNowJust/video2mp3",
+  "bugs": "https://github.com/MakeNowJust/video2mp3/issue",
+  "license": "Apache-2.0",
+  "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
+  "main": "index.js",
+  "repository": "https://github.com/MakeNowJust/video2mp3.git",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.0.0-rc3"
+  }
+}
