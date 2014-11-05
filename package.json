@@ -15,6 +15,6 @@
   "main": "index.js",
   "repository": "https://github.com/MakeNowJust/video2mp3.git",
   "dependencies": {
-    "fluent-ffmpeg": "^2.0.0-rc3"
+    "fluent-ffmpeg": "~2.0"
   }
 }
