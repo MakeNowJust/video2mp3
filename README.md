@@ -2,6 +2,8 @@
 
 Convert video to mp3 with using ffmpeg
 
+[![NPM](https://nodei.co/npm/video2mp3.png)](https://nodei.co/npm/video2mp3/)
+
 
 ##Prerequisite
 
