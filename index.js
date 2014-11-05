@@ -48,7 +48,7 @@ function convert(video, options, callback) {
   // default sampling rate is 44.1kHz.
   options.sampleRate = options.sampleRate == null ? 44100 : options.sampleRate;
 
-  // if passed `video` as the only argument, it returns stream object to convert to mp3.
+  // if passed no `options.mp3path`, it returns stream object to convert to mp3.
   if (options.mp3path == null) {
     return convertInternal(video, options.sampleRate).pipe();
 

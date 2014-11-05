@@ -31,19 +31,27 @@ video2mp3 = require('video2mp3');
 ```
 
 
-###`video2mp3.convert(videoPath or videoStream, [mp3Path], [callback])`
+###`video2mp3.convert(videoPath or videoStream, [options or mp3path], [callback])`
 
-If passed video as only argument, it returns stream object.
+If passed no-object type value (i.e. string, number ...) as the second argument,
+it equals `convert(video, {mp3path: options}, callback)`.
+
+`options` follows this properties.
+
+  - `options.mp3path` is the path of output mp3.
+  - `options.sampleRate` is the sampling rate, default is 44.1kHz.
+
+If passed no `options.mp3path`, it returns stream object to convert to mp3.
 
 ```js
 video2mp3.convert('video.mp4').pipe(require('fs').createWriteStream(audio.mp3'));
 ```
 
-Otherwise it converts video to mp3 and save to mp3Path,
+Otherwise it converts video to mp3 and save to `options.mp3path`,
 and callback call with null or error object when it succeeded or failured.
 
 ```js
-video2mp3.convert('video.mp4', 'audio.mp3', function (err) {
+video2mp3.convert('video.mp4', {mp3path: 'audio.mp3', sampleRate: 8000}, function (err) {
   if (err) throw err;
   console.log('convert successfully!');
 });
