@@ -31,7 +31,7 @@ video2mp3 = require('video2mp3');
 ```
 
 
-###`video2mp3.convert(videoPath or videoStream, [mp3Path], [callback])
+###`video2mp3.convert(videoPath or videoStream, [mp3Path], [callback])`
 
 If passed video as only argument, it returns stream object.
 
