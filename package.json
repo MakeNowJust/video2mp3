@@ -1,6 +1,6 @@
 {
   "name": "video2mp3",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Convert video to mp3 with using ffmpeg",
   "keywords": [
     "video",
