@@ -26,7 +26,6 @@ ffmpeg = require('fluent-ffmpeg');
 function convertInternal(video, sampleRate) {
   return ffmpeg(video, {
     nolog: true,
-    timeout: 60,
   })
     // options to convert to mp3
     .withAudioCodec('libmp3lame')
