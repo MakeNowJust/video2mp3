@@ -1,12 +1,12 @@
-#video2mp3
+# video2mp3
 
 Convert video to mp3 with using ffmpeg
 
-[![NPM](https://nodei.co/npm/video2mp3.png)](https://nodei.co/npm/video2mp3/)
+[![npm](https://nodei.co/npm/video2mp3.png)](https://nodei.co/npm/video2mp3/)
 [![Dependency Status](https://david-dm.org/MakeNowJust/video2mp3.svg)](https://david-dm.org/MakeNowJust/video2mp3)
 
 
-##Prerequisite
+## Prerequisite
 
 It requires `ffmpeg` and `liblamemp3` codec.
 
@@ -17,14 +17,14 @@ $ sudo apt-get install ffmpeg libavcodec-extra
 ```
 
 
-##Install
+## Install
 
 ```
 $ npm install video2mp3
 ```
 
  
-##API
+## API
 
 ```js
 var
@@ -32,7 +32,7 @@ video2mp3 = require('video2mp3');
 ```
 
 
-###`video2mp3.convert(videoPath or videoStream, [options or mp3path], [callback])`
+### `video2mp3.convert(videoPath or videoStream, [options or mp3path], [callback])`
 
 If passed no-object type value (i.e. string, number ...) as the second argument,
 it equals `convert(video, {mp3path: options}, callback)`.
@@ -58,16 +58,16 @@ video2mp3.convert('video.mp4', {mp3path: 'audio.mp3', sampleRate: 8000}, functio
 });
 ```
 
-##Author
+## Author
 
 TSUYUSATO Kitsune (MakeNowJust)
 
-##License
+## License
 
 Apache-2.0. Please read `LICENSE`.
 
 
-##Contribute
+## Contribute
 
   1. Fork this repository.
   2. Checkout your feature branch.
