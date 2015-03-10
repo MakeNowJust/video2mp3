@@ -13,6 +13,12 @@
   "license": "Apache-2.0",
   "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
   "main": "index.js",
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "index.js"
+  ],
   "repository": "https://github.com/MakeNowJust/video2mp3.git",
   "dependencies": {
     "fluent-ffmpeg": "^2.0.0-rc3"
