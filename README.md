@@ -1,5 +1,7 @@
 # video2mp3
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/MakeNowJust/video2mp3.svg)](https://greenkeeper.io/)
+
 Convert video to mp3 with using ffmpeg
 
 [![npm](https://nodei.co/npm/video2mp3.png)](https://nodei.co/npm/video2mp3/)
